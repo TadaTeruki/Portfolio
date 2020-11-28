@@ -35,7 +35,23 @@
                 margin-right: 10px;
                 background: linear-gradient(90deg, rgba(200,226,204,1) 0%, rgba(200,228,239,1) 100%);
             }
+
+            .void_format{
+                width: 100%;
+                height: 30px;
+            }
+
+            .table_format {
+                table-layout: fixed;
+            }
             
+            .table_format td {
+                border: 1px solid rgb(230,230,230);
+	            padding: 5px 10px;
+                width: 30%;
+	            text-align: left;
+                vertical-align: text-top;
+            }
 
         </style>
     </head>
@@ -54,7 +70,45 @@
         </div>
 
         <div class="line_format"></div>
+
+        <div class="void_format"></div>
+
+        <table class="table_format basic_format" >
+            <tr>
+                <td>
+                    研究内容・実績
+                </td>
+                <td>
+                    ソフトウェア開発実績
+                </td>
+                <td>
+                    技術発表会(LT等)参加実績・資料
+                </td>
+            </tr>
+            <tr>
+                <td><ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>2020/8/7 公開
+                        <br>複数ポインタ走査式空間インデックスアルゴリズム
+                        <br>" Multipointer spacial index algorithm (Mulpsi) "
+                        <br><a href="https://github.com/TadaTeruki/mulpsi" target="_blank">
+                            研究内容の概要・ソースコード (GitHub)</a>
+                        <br><a href="https://drive.google.com/file/d/1-IDpn92igTR-Dr3qLg3piahTaBRNR3un/view?usp=sharing" target="_blank">
+                            紹介資料PDF (NII 情報科学の達人でのミーティングより)</a>
+                    </li>
+                </td></ul>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+        </table>
+
         <p>編集中...</p>
+
     </body>
     
 </html>
