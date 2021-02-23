@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../../style.css">
+<div class="Basic_f">
+    <div class="Box_line_inner_f green"></div>
+    <span class="Empha_f">cairo-picker</span> <span class="Light_f">(カイロピッカ)</span> <br>
+    <div class="Box_line_inner_f gray"></div>
+    <p>
+        <br>
+        <a href="https://github.com/Perukii/cairo_picker">GitHub</a><br>
+        リリース日 : 2020/07/08 <br>
+        使用言語 : C++ (g++) <br>
+        開発環境 : Ubuntu (19.10) <br><br>
+
+        <div class="Box_line_inner_f gray"></div>
+        ウインドウ上にベクタグラフィックスを描画するための最小限の機能を実装したライブラリ。<br>
+        描画内容のプログラミングにはCairoの関数を用いる。<br>
+        プログラムのビルド時、Gtkmm(gtk3のC++ラッパー)が必要である。<br>
+        <br>
+        最低限の機能しか用意していないため、描画以外の機能の自由度には欠けるが、使用時に覚えることが少ない上動作が非常に軽量である。<br>
+        ループ描画を行えるため、動きのあるグラフィックスを描画することができる。<br>
+        またキー入力やマウス入力にも対応しているため、GUIアプリケーションやゲームなどを作ることも可能。<br>
+        <br>
+        現在は、主に研究内容の試験実装の検証に用いている。<br>
+        <br>
+
+        
+
+        <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">cairomm で作成 (&amp;cairo_picker) <a href="https://twitter.com/hashtag/cairographics?src=hash&amp;ref_src=twsrc%5Etfw">#cairographics</a><br>月！ <a href="https://t.co/yHTPOhGAkP">pic.twitter.com/yHTPOhGAkP</a></p>&mdash; Perukii (@perukii_pc) <a href="https://twitter.com/perukii_pc/status/1276468030466211840?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+        <div class="Box_line_inner_f gray"></div>
+        使用例<br>
+
+        <div class="Code_f gray">
+<br>
+#include "cairo_picker.hpp"<br>
+<br>
+Capr::C_picker picker;<br>
+int x = 0;<br>
+<br>
+// 描画内容を設定する関数
+void func(Capr::Cairo_cont cr){<br>
+&emsp;cr->set_source_rgba(1.0, 1.0, 1.0, 1.0);<br>
+&emsp;cr->paint();<br>
+&emsp;cr->set_source_rgba(1.0, 0.0, 0.0, 0.5);<br>
+&emsp;cr->rectangle(x++,100,150,150);<br>
+&emsp;cr->fill();<br>
+}<br>
+<br>
+int main(){<br>
+&emsp;// ウインドウのサイズを設定<br>
+&emsp;picker.set_default_size(400,400);<br>
+&emsp;// ウインドウの再描画の頻度を更新(下の場合、10/60 ≒ 0.167秒に一回ウインドウが再描画される)<br>
+&emsp;picker.set_loop(10);<br>
+&emsp;// アプリケーションを実行 (関数funcを繰り返し実行)<br>
+&emsp;picker.run(func);<br>
+}<br>
+        </div>
+        
+    </p>
+
+</div>
