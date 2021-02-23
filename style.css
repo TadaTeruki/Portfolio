@@ -1,0 +1,123 @@
+.red {
+    background: linear-gradient(90deg, #e19b5b 0%, #ec7a7a 100%);
+}
+
+.green {
+    background: linear-gradient(90deg, #94e2cc 0%, #9ee4ef 100%);
+}
+
+.sh_green {
+    background: linear-gradient(90deg, #c8e2cc 0%, #c8e4ef 100%);
+}
+
+.yellow {
+    background: linear-gradient(90deg, #fdc879 0%, #ecd165 100%);
+}
+
+.blue {
+    background: linear-gradient(90deg, #bca8ff 0%, #d2a2ff 100%);
+}
+
+.sh_blue {
+    background: linear-gradient(90deg, #cfc8e6 0%, #d2c3e1 100%);
+}
+
+.gray {
+    background: #eeeeee;
+}
+
+.font_white {
+    color: white;
+    font-weight: bold;
+}
+
+.img_format {
+    width: 400px;
+    border: 3px solid #c0c0c0;
+}
+
+.emphasize_format {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.Main_body{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.Sub_body{
+    margin: 30px 10px 10px 10px;
+    line-height: 250%;
+    
+}
+
+td{
+    font-weight: normal;
+}
+
+.Title_f{
+    font-size: xx-large;
+    font-family: "Yu Gothic UI";
+    text-shadow: 2px 2px 5px #d3d3d3;
+    
+}
+
+.Basic_f{
+    font-size: medium;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+    color: #222222;
+    font-family: "Yu Gothic UI";
+    line-height: 170%;
+}
+
+.Code_f{
+    font-size: small;
+    text-align: left;
+    font-weight: normal;
+    color: #555555;
+}
+
+.Empha_f{
+    font-size: large;
+    text-align: left;
+    font-weight: normal;
+    color: #222222;
+    font-family: "Yu Gothic UI";
+}
+
+.Light_f{
+    font-size: small;
+    text-align: left;
+    font-weight: lighter;
+    color: #444444;
+    font-family: "Yu Gothic UI";
+}
+
+.Table_f{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #d3d3d3;
+}
+
+.Box_square_f{
+    width: 20px;
+    height: 20px;
+}
+
+.Box_line_f{
+    margin-top: -15px;
+    width: 100%;
+    height: 2px;
+}
+
+.Box_line_inner_f{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 2px;
+}
+
+
+
+
